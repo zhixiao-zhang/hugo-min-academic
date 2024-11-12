@@ -1,0 +1,4 @@
+    <div class="profile">
+      <div class="about">{{ .Site.Params.about | markdownify }}</div>
+      <img src="{{ `images` | relURL }}/{{ .Site.Params.avatar }}" alt="{{ .Site.Params.author }}" class="avatar">
+    </div>
