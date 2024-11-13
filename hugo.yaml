@@ -1,7 +1,7 @@
 baseurl: "https://example.org/"  # please update this to your actual URL
 languageCode: "en-us"
-title: "Zhixiao Zhang"
-theme: "hugo-xmin"
+title: "A minimal academic website"
+theme: "hugo-min-academic"
 googleAnalytics: ""
 disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
@@ -16,28 +16,29 @@ menu:
     - name: Home
       url: ""
       weight: 1
-    - name: About
-      url: "about/"
+    - name: Publications
+      url: "publications/"
       weight: 2
-    - name: Categories
+    - name: Teaching
       url: "categories/"
       weight: 3
-    - name: Tags
+    - name: Service
       url: "tags/"
       weight: 4
-    - name: Subscribe
-      url: "index.xml"
+    - name: Blogs
+      url: "post/"
+      weight: 5
 
 params:
-  author: "Zhixiao Zhang"
+  author: "Volcano Rock"
   description: "An academic website"
-  footer: "&copy; Zhixiao Zhang 2024 -- Present"
+  footer: "&copy; Volcano Rock 2024 -- Present"
   about: >-
     I am a associate professor in the Department of Geology at the University of Volcano. My research interests include rock statistics, volcanic learning, and causal inference. I am also interested in earthquake prediction and statistical computing.<br>
-    **Email**: zhixiao-zhang at outlook dot com <br>
-    **Github**: [zhixiao-zhang](https://github.com/zhixiao-zhang)
+    **Email**: volcanic at example dot com <br>
+    **Github**: [volcanic](https://github.com/)
   avatar: "profile.jpeg"
-  news: "**News:** I'm looking forward to a PhD student in statistics at the University of Earth."
+  news: "**News:** I'm looking forward to a PhD student in volcanic statistics at the University of Earth."
   publications:
     - title: >-
         Paper 1

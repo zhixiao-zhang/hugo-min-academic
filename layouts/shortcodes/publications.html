@@ -1,0 +1,26 @@
+<publication class="publications">
+  {{ range .Page.Params.publications }}
+    <div class="publication-item">
+      <div class="conference">{{ .conference }}</div>
+      <div class="info">
+        <div class="paperTitle">{{ .title }}</div>
+        <div class="authors">{{ .authors | markdownify }}</div>
+        <div class="details">{{ .details }}</div>
+        <div class="links">
+          {{ if .pdf }}
+            <span><a href="{{ .pdf }}" target="_blank">PDF</a></span>
+          {{ end }}
+          {{ if .slides }}
+            <span><a href="{{ .slides }}" target="_blank">Slides</a></span>
+          {{ end }}
+          {{ if .video }}
+            <span><a href="{{ .video }}" target="_blank">Video</a></span>
+          {{ end }}
+          {{ if .code }}
+            <span><a href="{{ .code }}" target="_blank">Code</a></span>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</publication>

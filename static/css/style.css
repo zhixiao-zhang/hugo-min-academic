@@ -42,7 +42,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  img {
+  .avatar {
     border-radius: 50%;
     margin-right: 20px;
     max-width: 30%;
@@ -96,9 +96,6 @@ a:hover {
 
 .article-meta {
   text-decoration: none;
-  background: #eee;
-  padding: 5px;
-  border-radius: 5px;
 }
 .menu, .article-meta, footer { text-align: center; }
 .title { font-size: 1.1em; }
@@ -134,3 +131,13 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar {
+    display: none;
+  }
+}
