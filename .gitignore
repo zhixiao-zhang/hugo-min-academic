@@ -6,3 +6,4 @@ exampleSite/.hugo_build.lock
 exampleSite/public
 .hugo_build.lock
 public/
+.DS_Store
