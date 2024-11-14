@@ -1,28 +1,42 @@
-# HUGO XMIN
+# HUGO MIN ACADEMIC
 
-## _Keep it simple, but not simpler_
+## Introduction
 
-**XMin** is a Hugo theme written by [Yihui Xie](https://yihui.org) in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 140 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).
+This theme is a simple academic CV theme designed for PhD students and professors. It allows you to easily display personal information, publications, services, courses, and research updates without needing to write any code. You can simply write in Markdown to achieve a clean appearance.
+
+I created this theme because I prefer simple style compared to complex website built by a lot of JS code, I'm not a website builder.
 
 
-```bash
-find . -not -path '*/exampleSite/*' \( -name '*.html' -o -name '*.css' \) | xargs wc -l
-```
+## Tutorial
 
-```
-       5 ./layouts/404.html
-      12 ./layouts/_default/single.html
-      20 ./layouts/_default/list.html
-      13 ./layouts/_default/terms.html
-       0 ./layouts/partials/foot_custom.html
-       0 ./layouts/partials/head_custom.html
-       9 ./layouts/partials/footer.html
-      20 ./layouts/partials/header.html
-      51 ./static/css/style.css
-       7 ./static/css/fonts.css
-     137 total
-```
+Copy the hugo.yaml to your website's root directory as config.yaml.
 
-I can certainly further reduce the code, for example, by eliminating the CSS, but I believe a tiny bit of CSS can greatly improve readability. You cannot really find many CSS frameworks that only contain 50 lines of code.
+### Menu
 
-[![Screenshot](https://github.com/yihui/hugo-xmin/raw/master/images/screenshot.png)](https://xmin.yihui.org)
+If you don't want to display a menu (for example, you don't have any papers yet like me), simply comment the relevant line in config.yaml to hide this.
+
+### Homepage
+
+Place your icon in the `static/images/` directory.
+
+If you want to hide specific information on the homepage, comment the corresponding lines in config.yaml.
+
+### Publications
+
+Add your publications details in `content/publications.html`.
+
+### Teacing, Service, and Students
+
+Just add content to the respective files in `content/` directory, in markdown.
+
+### Blogs
+
+Write your blogs in the `content/post/` directory.
+
+## Screenshot
+
+![Screenshot](./screenshot.png)
+
+## Acknowledgement
+
+This theme is derived from [hugo-xmin](https://github.com/yihui/hugo-xmin) made by [Yihui Xie](https://yihui.org).

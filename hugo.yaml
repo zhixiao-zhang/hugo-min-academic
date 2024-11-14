@@ -1,6 +1,6 @@
 baseurl: "https://example.org/"  # please update this to your actual URL
 languageCode: "en-us"
-title: "A minimal academic website"
+title: "Алексей Иванович Петров"
 theme: "hugo-min-academic"
 googleAnalytics: ""
 disqusShortname: ""
@@ -20,14 +20,17 @@ menu:
       url: "publications/"
       weight: 2
     - name: Teaching
-      url: "categories/"
+      url: "teaching/"
       weight: 3
     - name: Service
-      url: "tags/"
+      url: "service/"
       weight: 4
-    - name: Blogs
-      url: "post/"
-      weight: 5
+    - name: Students
+      url: "students/"
+      weight: 6
+    # - name: Blogs
+    #   url: "post/"
+    #   weight: 6
 
 params:
   author: "Volcano Rock"

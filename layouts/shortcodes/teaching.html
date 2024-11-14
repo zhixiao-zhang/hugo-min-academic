@@ -1,0 +1,17 @@
+<teaching class="publication-item">
+  {{ range .Page.Params.tutorials }}
+    <div class="info">
+      <div class="paperTitle">{{ .title }}</div>
+      <div class="authors">{{ .authors | markdownify }}</div>
+      <i>{{ .sources }}</i>
+      <div class="links">
+        {{ if .slides }}
+          <span><a href="{{ .slides }}" target="_blank">Slides</a></span>
+        {{ end }}
+        {{ if .video }}
+          <span><a href="{{ .video }}" target="_blank">Video</a></span>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</teaching>
