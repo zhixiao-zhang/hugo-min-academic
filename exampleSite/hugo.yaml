@@ -37,7 +37,7 @@ params:
   description: "An academic website"
   footer: "&copy; Volcano Rock 2024 -- Present"
   about: >-
-    I am a associate professor in the Department of Geology at the University of Volcano. My research interests include rock statistics, volcanic learning, and causal inference. I am also interested in earthquake prediction and statistical computing.<br>
+    I am an associate professor in the Department of Geology at the University of Volcano. My research interests include rock statistics, volcanic learning, and causal inference. I am also interested in earthquake prediction and statistical computing.<br>
     **Email**: volcanic at example dot com <br>
     **Github**: [volcanic](https://github.com/)
   avatar: "profile.jpeg"
