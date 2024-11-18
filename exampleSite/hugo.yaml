@@ -74,6 +74,7 @@ params:
       institution: "University of Fire"
       date: "2004-2008"
       location: "Earth"
+  advice: true
 
 markup:
   highlight:
