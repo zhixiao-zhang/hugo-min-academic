@@ -61,6 +61,19 @@ params:
       code: "#"
   anotherInfo: >-
     > I also maintain a blog in Chinese, which can be found _[here](https://example.com/)_.
+  education:
+    - degree: "PhD in Geology"
+      institution: "University of Volcano"
+      date: "2010-2014"
+      location: "Earth"
+    - degree: "MSc in Geology"
+      institution: "University of Earth"
+      date: "2008-2010"
+      location: "Earth"
+    - degree: "BSc in Geology"
+      institution: "University of Fire"
+      date: "2004-2008"
+      location: "Earth"
 
 markup:
   highlight:
