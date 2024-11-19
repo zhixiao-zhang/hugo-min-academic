@@ -44,6 +44,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  .about {
+    flex: 1;
+    font-size: 1.1em;
+    a:link, a:visited {
+      color: #00f;
+    }
+  }
   .avatar {
     border-radius: 50%;
     margin-right: 20px;
