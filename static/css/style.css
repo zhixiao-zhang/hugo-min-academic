@@ -3,6 +3,9 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5;
+  a:link, a:visited {
+    color: #0076df;
+  }
 }
 
 /* header and footer areas */
@@ -25,16 +28,16 @@ body {
 .menu {
   padding: 0;
   font-size: 1.2em;
-}
-.menu li {
-  display: inline;
-  padding: 3px;
+  a:link, a:visited {
+    color: #000;
+  }
+  li {
+    display: inline;
+    padding: 3px;
+  }
 }
 a {
   text-decoration: none;
-}
-a:link, a:visited {
-  color: #000;
 }
 a:hover {
   color: #f00;
@@ -47,9 +50,6 @@ a:hover {
   .about {
     flex: 1;
     font-size: 1.1em;
-    a:link, a:visited {
-      color: #00f;
-    }
   }
   .avatar {
     border-radius: 50%;
@@ -66,6 +66,9 @@ a:hover {
   font-size: 1.1em;
 }
 .publications {
+  a:link, a:visited {
+    color: #000;
+  }
   .publicationsTitle {
     font-size: 1.3em;
     margin-bottom: 5px;
