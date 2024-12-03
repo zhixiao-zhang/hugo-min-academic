@@ -6,6 +6,9 @@ body {
   a:link, a:visited {
     color: #0076df;
   }
+  a:hover {
+    color: #f00;
+  }
 }
 
 /* header and footer areas */
@@ -31,6 +34,9 @@ body {
   a:link, a:visited {
     color: #000;
   }
+  a:hover {
+    color: #f00;
+  }
   li {
     display: inline;
     padding: 3px;
@@ -38,9 +44,6 @@ body {
 }
 a {
   text-decoration: none;
-}
-a:hover {
-  color: #f00;
 }
 
 .profile {
@@ -68,6 +71,9 @@ a:hover {
 .publications {
   a:link, a:visited {
     color: #000;
+  }
+  a:hover {
+    color: #f00;
   }
   .publicationsTitle {
     font-size: 1.3em;
