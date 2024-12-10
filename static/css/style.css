@@ -245,14 +245,14 @@ video {
   }
 
   #menu li {
-    display: block; /* 确保每个菜单项单独占一行 */
-    text-align: right; /* 居中对齐文字 */
-    padding: 10px 0; /* 增加垂直间距 */
-    width: 100%; /* 可选：菜单项占满父容器 */
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+    width: 100%;
   }
 
   .header.expanded {
-    height: 400px;
+    height: auto;
   }
 
   .avatar {
