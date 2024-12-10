@@ -78,7 +78,7 @@ a {
 
 .profile {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   margin-top: 60px;
   scroll-margin-top: 60px;
