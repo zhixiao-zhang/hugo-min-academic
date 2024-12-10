@@ -1,0 +1,22 @@
+    <div id="Teaching" class="Teaching">
+      <div class="profileTitle">Teaching</div>
+      <div class="CourseInfo">
+        {{ range .Site.Params.teaching }}
+          {{ range $year, $courses := . }}
+            {{ $year }}
+            <ul>
+              {{ range $courses }} <!-- 遍历课程 -->
+                <li>
+                  {{ if .website }}
+                    <a href="{{ .website }}">{{ .course }}</a>
+                  {{ else }}
+                    {{ .course }}
+                  {{ end }}
+                  {{ .notes }}
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>

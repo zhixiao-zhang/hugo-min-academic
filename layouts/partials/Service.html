@@ -1,0 +1,20 @@
+    <div id="Service" class="Service">
+      <div class="profileTitle">Service</div>
+      <div class="ServiceInfo">
+        {{ range .Site.Params.service }}
+          {{ range $year, $positions := . }}
+            {{ $year }}
+            <ul>
+              {{ range $positions }} <!-- 遍历课程 -->
+                <li>
+                  <strong>{{ .title }}</strong>,
+                  <strong>{{ .institution }}</strong>,
+                  {{ .notes }}
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+

@@ -11,32 +11,18 @@ permalinks:
   note: "/note/:year/:month/:day/:slug/"
   post: "/post/:year/:month/:day/:slug/"
 
-menu:
-  main:
-    - name: Home
-      url: ""
-      weight: 1
-    - name: Publications
-      url: "publications/"
-      weight: 2
-    - name: Teaching
-      url: "teaching/"
-      weight: 3
-    - name: Service
-      url: "service/"
-      weight: 4
-    - name: Students
-      url: "students/"
-      weight: 5
-    - name: Blogs
-      url: "post/"
-      weight: 6
-
 params:
   author: "Volcano Rock"
   description: "An academic website"
   footer: "&copy; Volcano Rock 2024 -- Present"
-  SinglePage: true
+  singlePageMenu:
+    - "About"
+    - "News"
+    - "Publications"
+    - "Students"
+    - "Experience"
+    - "Teaching"
+    - "Service"
   about: >-
     I am an associate professor in the Department of Geology at the University of Volcano. My research interests include rock statistics, volcanic learning, and causal inference. I am also interested in earthquake prediction and statistical computing.<br>
     **Email**: volcanic at example dot com <br>
@@ -75,7 +61,68 @@ params:
       institution: "University of Fire"
       date: "2004-2008"
       location: "Earth"
-  advice: true
+  work:
+    - degree: "Associate Professor"
+      company: "University of Volcano"
+      date: "2020-Present"
+      location: "Earth"
+    - degree: "Assistant Professor"
+      company: "University of Volcano"
+      date: "2016-2020"
+      location: "Earth"
+    - degree: "Postdoc"
+      company: "University of Earth"
+      date: "2014-2016"
+      location: "Earth"
+  advice:
+    - summary: >-
+        Here are my advice for students.
+    - text:
+      - "Do not be afraid of asking questions."
+      - "Do not be afraid of making mistakes."
+      - "Do not be afraid of trying new things."
+  students:
+    - current:
+      - name: "Student 1"
+        notes: "(2020-) PhD"
+        website: "https://example.com/"
+      - name: "Student 2"
+        notes: "(2019-) Master"
+    - alumni:
+      - name: "Student 3"
+        notes: "(2016-2020) PhD"
+      - name: "Student 4"
+        notes: "(2015-2019) Master"
+      - name: "Student 5"
+        notes: "(2014-2016) Undergraduate"
+  teaching:
+    - 2024:
+      - course: "Geology 101, "
+        notes: "Volcanic rocks and their statistics, Spring 2024"
+        website: "https://example.com/"
+      - course: "Geology 102, "
+        notes: "Volcanic rocks and their statistics, Fall 2024"
+    - 2023:
+      - course: "Geology 101, "
+        notes: "Volcanic rocks and their statistics, Spring 2023"
+        website: "https://example.com/"
+      - course: "Geology 102, "
+        notes: "Volcanic rocks and their statistics, Fall 2023"
+  service:
+    - 2024:
+      - title: "Program Committee"
+        institution: "Conference"
+        notes: "Volcanic rocks and their statistics, Spring 2024"
+      - title: "Reviewer"
+        institution: "Journal"
+        notes: "Volcanic rocks and their statistics, Fall 2024"
+    - 2023:
+      - title: "Program Committee"
+        institution: "Conference"
+        notes: "Volcanic rocks and their statistics, Spring 2023"
+      - title: "Program Committee"
+        institution: "Conference"
+        notes: "Volcanic rocks and their statistics, Fall 2023"
 
 markup:
   highlight:

@@ -1,0 +1,39 @@
+    <div id="Students" class="Students">
+      <div class="profileTitle">Students</div>
+      <div class="studentsInfo">
+        {{ with index .Site.Params.students 0 }}
+          <div class="studentsTitle">Current Students</div>
+          <ul>
+          {{ range .current }}
+            <div>
+              <li>
+                {{ if .website }}
+                  <a href="{{ .website }}">{{ .name }}</a>
+                {{ else }}
+                  {{ .name }}
+                {{ end }}
+                {{ .notes }}
+              </li>
+            </div>
+          {{ end }}
+          </ul>
+        {{ end }}
+        {{ with index .Site.Params.students 1 }}
+          <div class="studentsTitle">Alumni</div>
+          <ul>
+          {{ range .alumni }}
+            <div>
+              <li>
+                {{ if .website }}
+                  <a href="{{ .website }}">{{ .name }}</a>
+                {{ else }}
+                  {{ .name }}
+                {{ end }}
+                {{ .notes }}
+              </li>
+            </div>
+          {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    </div>

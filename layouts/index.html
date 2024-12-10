@@ -1,9 +1,8 @@
 {{ partial "header.html" . }}
 
-{{ partial "profile.html" . }}
-{{ partial "news.html" . }}
-{{ partial "selectPub.html" . }}
-{{ partial "career.html" . }}
-{{ partial "advice.html" . }}
+{{ $pageContext := . }}
+{{ range .Site.Params.singlePageMenu }}
+{{ partial (printf "%s.html" .) $pageContext }}
+{{ end }}
 
 {{ partial "footer.html" . }}

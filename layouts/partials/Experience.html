@@ -1,0 +1,42 @@
+    <div id="Experience" class="Experience">
+      <div class="profileTitle">Experience</div>
+      {{ if .Site.Params.work }}
+        <div class="ExperienceTitle">Career</div>
+        <ul>
+        {{ range .Site.Params.work }}
+        <li>
+          <div class="education">
+            <div class="first-line">
+              <div class="institution">{{ .company }}</div>
+              <div class="date">{{ .date }}</div>
+            </div>
+            <div class="second-line">
+              <div class="degree">{{ .degree }}</div>
+              <div class="location">{{ .location }}</div>
+            </div>
+        </div>
+        </li>
+        {{ end }}
+        </ul>
+      {{ end }}
+      {{ if .Site.Params.education }}
+        <div class="ExperienceTitle">Education</div>
+        <ul>
+        {{ range .Site.Params.education }}
+        <li>
+          <div class="education">
+            <div class="first-line">
+              <div class="institution">{{ .institution }}</div>
+              <div class="date">{{ .date }}</div>
+            </div>
+            <div class="second-line">
+              <div class="degree">{{ .degree }}</div>
+              <div class="location">{{ .location }}</div>
+            </div>
+        </div>
+        </li>
+        {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+

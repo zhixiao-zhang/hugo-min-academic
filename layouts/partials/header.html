@@ -13,15 +13,13 @@
   <body>
     <div class="header">
       <div class="homeTitle">{{ .Site.Title }}</div>
-      {{ if not .Site.Params.SinglePage }}
-      <nav class="menus">
-        <ul class="menu">
-          {{ range .Site.Menus.main }}
-          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      <button id="menu-toggle" onclick="toggleMenu()">⋯</button>
+      <nav id="menu" class="menu">
+        <ul>
+          {{ range .Site.Params.singlePageMenu }}
+          <li><a href="#{{ . }}">{{ . }}</a></li>
           {{ end }}
         </ul>
       </nav>
-      {{ end }}
     </div>
-    <hr/>
-
+    <div class="content">
