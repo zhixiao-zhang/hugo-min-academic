@@ -13,6 +13,7 @@
   <body>
     <div class="header">
       <div class="homeTitle">{{ .Site.Title }}</div>
+      {{ if not .Site.Params.SinglePage }}
       <nav class="menus">
         <ul class="menu">
           {{ range .Site.Menus.main }}
@@ -20,6 +21,7 @@
           {{ end }}
         </ul>
       </nav>
+      {{ end }}
     </div>
     <hr/>
 
